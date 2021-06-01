@@ -7,22 +7,21 @@ public class MaximumTest {
     //Test Case 1.1
     @Test
     public void givenFirstNumberAsLarge_Return_FirstNumberAsMax() {
-        Integer max = findMax.Max(25, 10, 7);
-        Assertions.assertEquals((Integer) 25, max);
+        Float max = findMax.Max(25.58f, 10.5f, 7.5f);
+        Assertions.assertEquals((Float) 25.58f, max);
     }
 
     //Test Case 1.2
     @Test
     public void givenSecondNumberAsLarge_Return_SecondNumberAsMax() {
-        Integer max = findMax.Max(35, 46, 10);
-        Assertions.assertEquals((Integer) 46, max);
+        Float max = findMax.Max(35.45f, 46.35f, 10.4f);
+        Assertions.assertEquals((Float) 46.35f, max);
     }
 
     //Test case 1.3
     @Test
     public void givenThirdNumberAsLarge_Return_ThirdNumberAsMax() {
-        Integer max = findMax.Max(35, 25, 140);
-        Assertions.assertEquals((Integer) 140, max);
+        Float max = findMax.Max(35.5f, 25.4f, 140.4f);
+        Assertions.assertEquals((Float) 140.4f, max);
     }
 }
-
